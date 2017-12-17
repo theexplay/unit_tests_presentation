@@ -6,200 +6,265 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="node_modules/shower-ribbon/styles/screen-16x10.css">
+	<style>
+		.color_black {
+			color: #000000;
+		}
+
+		.title_large {
+			font-size: 40px;
+			color: #585a5e;
+			line-height: 1;
+			text-align: center;
+			font-weight: 700;
+		}
+
+		.center {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+	</style>
 </head>
 <body class="shower list">
 
 	<header class="caption">
-		<h1>Shower Presentation Engine</h1>
-		<p>Yours Truly, Famous Inc.</p>
+		<h1>Unit тестирование</h1>
 	</header>
 
 	<section class="slide" id="cover">
-		<h2>Shower Presentation Engine</h2>
-		<p>Brought to you by <a href="http://pepelsbey.net">Vadim Makeev</a></p>
+		<h2 class="color_black">Автоматическое тестирование</h2>
 		<figure>
-			<img class="cover" src="pictures/cover.jpg" alt="Hands on the orange typewriter in a park">
-			<figcaption class="white">
-				<a href="http://fiftyfootshadows.net/">© John Carey</a>
-			</figcaption>
+			<img class="cover" src="pictures/slide1-cover2.png">
 		</figure>
 		<style>
 			#cover h2 {
-				margin:30px 0 0;
-				color:#FFF;
-				text-align:center;
-				font-size:70px;
-				}
-			#cover p {
-				margin:10px 0 0;
-				text-align:center;
-				color:#FFF;
-				font-style:italic;
-				font-size:20px;
-				}
-				#cover p a {
-					color:#FFF;
-					}
+				margin: 0;
+				color: #fff;
+				text-align: center;
+				font-size: 70px;
+				text-shadow: 0 0 18px rgba(0,0,0, 0.6);
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+			}
+
+			#cover img {
+				max-height: none;
+			}
 		</style>
 	</section>
 
 	<section class="slide">
-		<h2>Shower key features</h2>
-		<ol>
-			<li>Built on HTML, CSS and vanilla JavaScript</li>
-			<li>Works in all modern browsers</li>
-			<li>Themes are separated from engine</li>
-			<li>Modular and extensible</li>
-			<li>Fully keyboard accessible</li>
-			<li>Printable to PDF</li>
-		</ol>
-		<p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
+		<h2>Тестирование приложений</h2>
+		<p>Вы можете рассматривать тесты как гарантии надёжности ваших приложений.
+			Они будут запускаться не только на вашей локальной машине,
+			но и на CI-сервисах, чтобы сломанные сборки не попадали в продакшен.
+		</p>
+		<blockquote class="next">
+			«Тесты — это больше, чем просто гарантии, они обеспечивают живую документацию для вашей кодовой базы».
+		</blockquote>
 	</section>
 
 	<section class="slide">
-		<h2>Plain text on your slides</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
-	</section>
-
-	<section class="slide">
-		<h2>Two columns if you like</h2>
-		<p class="double">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-	</section>
-
-	<section class="slide">
-		<h2>All kind of lists</h2>
-		<ol>
-			<li>Simple lists are marked with bullets</li>
-			<li>Ordered lists begin with a number</li>
-			<li>You can even nest lists one inside another
-				<ul>
-					<li>Or mix their types</li>
-					<li>But do not go too far</li>
-					<li>Otherwise audience will be bored</li>
-				</ul>
-			</li>
-			<li>Look, seven rows exactly!</li>
-		</ol>
-	</section>
-
-	<section class="slide">
-		<h2>Serious citations</h2>
-		<figure>
-			<blockquote>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-			</blockquote>
-			<figcaption>Marcus Tullius Cicero</figcaption>
+		<p>Ответ варьируется, но, как правило, вы можете следовать рекомендациям, установленным пирамидой тестирования.</p>
+		<figure style="position: relative;" class="next">
+			<img src="pictures/test-pyramid.png" style="max-width: 60%;">
+			<figcaption class="white" style="position: absolute;right: 0;top: 50%;transform: translateY(-50%);">
+				Пирамида тестирования
+			</figcaption>
 		</figure>
 	</section>
 
 	<section class="slide">
-		<h2>Code samples</h2>
+		<h2>Пирамида тестирования</h2>
+		<ol>
+			<li class="next">Модульные тесты реализовывать быстрее, чем GUI тесты (время на разработку меньше). Модульные тесты отрабатывают быстрее, чем GUI.</li>
+			<li class="next">Модульные тесты дешевле, чем GUI тесты (однако, стремясь к вершине пирамиды, мы получаем большую уверенность в том, что все работает как ожидалось).</li>
+			<li class="next">Тестирование должно быть разносторонним, но соотношение тестов должно быть таково, что модульных количественно больше, чем GUI. Системные тесты занимают золотую середину.</li>
+		</ol>
+	</section>
+
+	<section class="slide">
+		<h2>В двух словах о типах тестирования</h2>
+		<p>В основном выделяется три типа тестирования</p>
+		<ul>
+			<li class="next">Unit Test (Модульные)</li>
+			<li class="next">Integration Tests (Системные, интеграционные)</li>
+			<li class="next">Functional Tests (Функциональные, end2end, GUI)</li>
+		</ul>
+		<p class="note next">Также существуют разные подходы (методологии, структуры) BDD, TDD, TLD.</p>
+	</section>
+
+	<section class="slide">
+		<h2 class="" style="color: #585a5e;">Анатомия модульного теста</h2>
+		<p>Каждый модульный тест имеет следующую структуру:</p>
+
+		<ol>
+			<li>Настройка теста</li>
+			<li>Вызов тестируемого метода</li>
+			<li>Утверждение</li>
+		</ol>
+
+		<p>В каждом модульном тесте должна проверяться только одна проблема.</p>
+		<p>Если мы явно видим, что тест включает в себя совершенно независимые проверки – лучше разбить его на два более простых и наглядных.</p>
+	</section>
+
+	<section class="slide">
+		<h2>Jasmine</h2>
 		<pre>
-			<code>&lt;!DOCTYPE html&gt;</code>
-			<code class="mark">&lt;html lang="en"&gt;</code>
-			<code><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span></code>
-			<code>    &lt;title&gt;Shower&lt;/title&gt;</code>
-			<code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-			<code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
-			<code><mark>&lt;/head&gt;</mark></code>
+			<code>describe('Calculator class', () => {</code>
+			<code>    it('получаем сумму аргументов', () => {</code>
+			<code>        const calculator = new Calculator();</code>
+			<code>        const sum = calculator.add(1, 4);</code>
+			<code>        expect(sum).toBe(5);</code>
+			<code>    });</code>
+			<code>    ...</code>
+			<code>});</code>
 		</pre>
 	</section>
 
 	<section class="slide">
-		<h2>Even tables</h2>
-		<table>
-		<tr>
-			<th scope="col">Locavore</th>
-			<th>Umami</th>
-			<th>Helvetica</th>
-			<th>Vegan</th>
-		</tr>
-		<tr>
-			<th scope="row">Fingerstache</th>
-			<td>Kale</td>
-			<td>Chips</td>
-			<td>Keytar</td>
-		</tr>
-		<tr>
-			<th scope="row">Sriracha</th>
-			<td>Gluten-free</td>
-			<td>Ennui</td>
-			<td>Keffiyeh</td>
-		</tr>
-		<tr>
-			<th scope="row">Thundercats</th>
-			<td>Jean</td>
-			<td>Shorts</td>
-			<td>Biodiesel</td>
-		</tr>
-		<tr>
-			<th scope="row">Terry</th>
-			<td>Richardson</td>
-			<td>Swag</td>
-			<td>Blog</td>
-		</tr>
-		</table>
-		<p>It’s good to have information organized.</p>
-	</section>
-
-	<section class="slide" id="picture">
-		<h2>Pictures</h2>
-		<figure>
-			<img class="cover" src="pictures/picture.jpg" alt="Orange typewriter on a wooden table close-up">
-			<figcaption class="white">
-				<a href="http://fiftyfootshadows.net/">© John Carey</a>
-			</figcaption>
-		</figure>
-		<style>
-			#picture h2 {
-				color:#FFF;
-				}
-		</style>
+		<h2>Unit тестирование в js. Инструменты для тестирования.</h2>
+		<ul class="next triple" >
+			<li>Jasmine</li>
+			<li>Karma</li>
+			<li>AVA</li>
+			<li>Tape</li>
+			<li>Mocha</li>
+			<li>Chai</li>
+			<li>Cucumber</li>
+			<li>Unexpected</li>
+			<li>Sinon</li>
+			<li>Istanbul</li>
+			<li>Jest</li>
+			<li>Phantom.js и др.</li>
+		</ul>
+		<p class="next">Сравнение фреймворков для <b>unit</b> тестирования <a href="https://goo.gl/7C8YGo" target="_blank">https://goo.gl/7C8YGo</a></p>
 	</section>
 
 	<section class="slide">
-		<h2 class="shout shrink">You can even shout this way</h2>
+		<h2>Шпионы, стабы и моки.</h2>
+		<p>Прежде чем приступить к практике модульного тестирования, давайте разберёмся, что такое шпионы, стабы (заглушки) и моки!</p>
 	</section>
 
 	<section class="slide">
-		<h2>Inner navigation</h2>
-		<ol>
-			<li>Lets you reveal list items one by one</li>
-			<li class="next">To keep some key points</li>
-			<li class="next">In secret from audience</li>
-			<li class="next">But it will work only once</li>
-			<li class="next">Nobody wants to see the same joke twice</li>
-		</ol>
+		<h2>Шпионы</h2>
+		<p>Вы можете использовать шпионов для получения информации о вызовах функций, например, сколько раз они были вызваны или какие аргументы были им переданы.</p>
+		<pre style="font-size: 16px;">
+			<code>it('postmessage, frod or session end', () => {</code>
+			<code class="mark">    spyOn(CertificatePageEvents, 'trigger');</code>
+			<code>    ...</code>
+			<code>    cardView.postMessage({originalEvent: {data: 'purchase:card:fail'}});</code>
+			<code>    ...</code>
+			<code class="mark">    expect(CertificatePageEvents.trigger.calls.allArgs()).toEqual([</code>
+			<code class="mark">    ['certificateView:cardbind'], ['billing:payment:errorModalOpen', errorModalData]]);</code>
+			<code>})</code>
+		</pre>
 	</section>
 
-	<section class="slide grid">
-		<h2>All nicely aligned to grid</h2>
+	<section class="slide">
+		<h2>Стабы </h2>
+		<p>Стабы похожи на шпионов, но они заменяют целевую функцию. Вы можете использовать стабы для управления поведением метода, чтобы форсировать какие-то события в коде (например, выброс ошибки) или предотвратить вызовы внешних ресурсов (таких как HTTP API).</p>
 	</section>
 
-	<section class="slide" id="see-more">
-		<h2 class="shout">
-			<img src="pictures/logo.svg" alt="Shower logo">
-			<a href="https://github.com/shower/shower">See more on GitHub</a>
-		</h2>
+	<section class="slide">
+		<pre style="font-size: 16px;">
+			<code>it('calls all subscribers, even if there are exceptions', function (){</code>
+			<code>		var message = 'an example message'</code>
+			<code>		var error = 'an example error message'</code>
+			<code class="mark">		var stub = sinon.stub().throws()</code>
+			<code>		var spy1 = sinon.spy()</code>
+			<code>		var spy2 = sinon.spy()</code>
+			<code class="mark">		PubSub.subscribe(message, stub)</code>
+			<code>		PubSub.subscribe(message, spy1)</code>
+			<code>		PubSub.subscribe(message, spy2)</code>
+			<code>		PubSub.publishSync(message, undefined)</code>
+			<code>		assert(spy1.called)</code>
+			<code>		assert(spy2.called)</code>
+			<code class="mark">		assert(stub.calledBefore(spy1))</code>
+			<code>})</code>
+			<code>// Пример взят из документации Sinon: http://sinonjs.org/docs/</code>
+		</pre>
+	</section>
+
+	<section class="slide">
+		<h2>Моки</h2>
+		<p>Моки — это поддельные методы с заранее запрограммированным поведением и соглашениями.</p>
+	</section>
+
+	<section class="slide">
+		<pre style="font-size: 16px;">
+			<code>it('calls all subscribers when exceptions happen', function () {</code>
+			<code>    var myAPI = {</code>
+			<code>        method: function () {}</code>
+			<code>    }</code>
+			<code>    var spy = sinon.spy()</code>
+			<code class="mark">    var mock = sinon.mock(myAPI)</code>
+			<code class="mark">    mock.expects("method").once().throws()</code>
+			<code>    PubSub.subscribe("message", myAPI.method)</code>
+			<code>    PubSub.subscribe("message", spy)</code>
+			<code>    PubSub.publishSync("message", undefined)</code>
+			<code class="mark">    mock.verify()</code>
+			<code>    assert(spy.calledOnce)</code>
+			<code>})</code>
+			<code>// Пример взят из документации Sinon: http://sinonjs.org/docs/</code>
+		</pre>
+	</section>
+
+	<section class="slide">
+		<h2>Покрытие кода</h2>
+		<p>Чтобы лучше понять, насколько хорошо ваша кодовая база покрыта тестами, вы можете сгенерировать отчёт о покрытии.</p>
+		<img src="pictures/covering.png" class="next">
+	</section>
+
+	<section class="slide">
 		<style>
-			#see-more h2 {
-				font-size:100px
-				}
-			#see-more img {
-				width:0.72em;
-				height:0.72em;
-				}
+			#examples > * {
+				display: inline-block;
+				vertical-align: middle;
+			}
 		</style>
+		<div id="examples" style="margin-top: 85px; text-align: center;">
+			<img src="pictures/karma.png" alt="">
+			<h2 style="margin: 0 20px;">+</h2>
+			<img src="pictures/jasmine-horizontal.png">
+		</div>
+		<p style="margin-top: 12px;text-align: center;">Jasmine - это инструмент для определения тестов в стиле BDD.</p>
+		<p style="margin-top: 12px;text-align: center;">Karma - test-runner для JavaScript.</p>
+		<p style="text-align: center;">Документация: <a href="https://jasmine.github.io/api/2.8/global">https://jasmine.github.io/api/2.8/global</a></p>
+		<p style="text-align: center; margin-top: -1em;">Документация: <a href="https://karma-runner.github.io/1.0/index.html">https://karma-runner.github.io/1.0/index.html</a></p>
 	</section>
 
-	<footer class="badge">
-		<a href="https://github.com/shower/shower">Fork me on GitHub</a>
-	</footer>
+	<section class="slide">
+		<h2 class="">Тестирование может уберечь вас от множества неприятностей.</h2>
+		<p>Даже если какое-то изменение потенциально может порушить всё – его совершенно не страшно сделать. Ведь есть масса тестов, которые быстро и в автоматическом режиме проверят работу кода. И если что-то падает, то это можно будет легко локализовать и поправить.</p>
+	</section>
+
+	<section class="slide">
+		<h2 class="shout shrink">Вопросы?</h2>
+	</section>
+
+	<section class="slide">
+		<h2>Использованные материалы / полезные ссылки.</h2>
+		<ul>
+			<li><a href="https://medium.com/powtoon-engineering/a-complete-guide-to-testing-javascript-in-2017-a217b4cd5a2a">An Overview of JavaScript Testing in 2017</a></li>
+			<li><a href="https://medium.com/devschacht/node-hero-chapter-9-68041507aec">Модульное тестирование</a></li>
+			<li><a href="https://learn.javascript.ru/testing">Автоматические тесты при помощи chai и mocha</a></li>
+			<li><a href="http://www.syntaxsuccess.com/viewarticle/writing-jasmine-unit-tests-in-es6">Writing Jasmine Unit Tests In ES6</a></li>
+			<li><a href="https://dou.ua/forums/topic/8897/">TDD vs BDD. В чем разница?</a></li>
+			<li><a href="https://habrahabr.ru/company/jugru/blog/329468/">BDD — рабочий метод или TDD в модной обертке?</a></li>
+		</ul>
+	</section>
 
 	<div class="progress"></div>
 
 	<script src="node_modules/shower-core/shower.min.js"></script>
 	<!-- Copyright © 2017 Yours Truly, Famous Inc. -->
-
+<!--
+https://medium.com/@arturbasak/the-testing-pyramid-2fec1c1fef91
+-->
 </body>
 </html>
